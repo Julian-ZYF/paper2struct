@@ -249,26 +249,3 @@ nginx && ngrok http --url=your-domain.ngrok-free.app 6006
 | `DEEPSEEK_BASE_URL` | 否 | API 地址，默认 `https://api.deepseek.com` |
 | `DEEPSEEK_MODEL` | 否 | 模型名称，默认 `deepseek-chat` |
 
----
-
-## 简历亮点
-
-以下内容可直接用于简历项目描述：
-
-**项目名称**：Paper2Struct — 基于 LLM 的学术论文智能结构化解析系统
-
-**技术栈**：FastAPI · Next.js 14 · TypeScript · Tailwind CSS · DeepSeek API · PyMuPDF · Pydantic v2 · nginx · ngrok
-
-**核心亮点**：
-
-1. **全栈独立开发**：独立完成从 PDF 解析、LLM Prompt 设计、后端 REST API 到前端 UI 渲染的完整链路，前后端分离架构。
-
-2. **Prompt Engineering**：设计两套独立 Prompt，分别针对结构化中文信息抽取（12 字段，含领域引导）和英文原文证据段落抽取（7 板块全覆盖，每段 150-250 词），有效控制输出格式与质量。
-
-3. **并行化性能优化**：使用 `concurrent.futures.ThreadPoolExecutor` 将两次 LLM API 调用由串行改为并行，端到端响应时间降低约 40%。
-
-4. **工程化部署**：配置 nginx 反向代理统一前后端入口，结合 ngrok 静态域名实现 HTTPS 公网访问，无需用户配置即可使用。
-
-5. **前端数据管理**：基于 `localStorage` 实现文献库持久化存储；利用 `sessionStorage` 跨页面传递解析结果，无需引入复杂状态管理库。
-
-6. **类型安全**：全前端 TypeScript 编写，Pydantic v2 严格校验后端数据模型，前后端接口契约清晰。
