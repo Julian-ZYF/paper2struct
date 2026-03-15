@@ -1,0 +1,34 @@
+# v0 sandbox internal files
+__v0_runtime_loader.js
+__v0_devtools.tsx
+__v0_jsx-dev-runtime.ts
+.npmrc
+.snowflake/
+.v0-trash/
+.vercel/
+next.user-config.*
+
+# Environment variables — 包含 API Key，绝对不能上传
+.env
+.env.*
+.env*.local
+
+# Common ignores
+node_modules/
+.next/
+.DS_Store
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# 上传的 PDF 文件
+uploads/
+
+# 测试文件
+core_app/test_files/
+
+# AutoDL 平台内部文件
+.autodl/
